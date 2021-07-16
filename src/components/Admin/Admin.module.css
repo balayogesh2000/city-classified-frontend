@@ -9,5 +9,8 @@
 .body {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.body a {
+  margin-right: 20px;
 }

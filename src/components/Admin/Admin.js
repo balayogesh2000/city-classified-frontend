@@ -12,6 +12,9 @@ const Admin = () => {
         <Link to="/admin/post-information">
           <Button>Post Information</Button>
         </Link>
+        <Link to="/admin/post-classifieds">
+          <Button>Post Classifieds</Button>
+        </Link>
       </div>
     </div>
   );
