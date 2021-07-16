@@ -1,7 +1,7 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import FormContainer from "../../common/FormContainer/FormContainer";
+import FormContainer from "../FormContainer/FormContainer";
 
 import classes from "./PostInformation.module.css";
 
@@ -110,11 +110,11 @@ const data = [
   },
 ];
 
-const PostInformation = () => {
+const PostInformation = ({ role }) => {
   const notify = () => toast.success("Form Submitted Successfully!");
   return (
     <>
-      <h4 className={classes.title}>Post Information</h4>
+      <h4 className={classes.title}>{role} - Post Information</h4>
       <div className={classes.PostInformation}>
         <FormContainer
           data={data}

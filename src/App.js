@@ -1,11 +1,14 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+import Home from "./Home";
 import Signup from "./components/Signup/Signup";
 import Login from "./components/Login/Login";
 import Admin from "./components/Admin/Admin";
-import PostInformation from "./components/Admin/PostInformation/PostInformation";
-import Home from "./Home";
+import AdminPostInformation from "./components/Admin/PostInformation";
+import AdminPostClassifieds from "./components/Admin/PostClassifieds";
+import Posters from "./components/Posters/Posters";
+import PostersPostClassifieds from "./components/Posters/PostClassifieds";
 
 const App = () => {
   return (
@@ -18,7 +21,18 @@ const App = () => {
         <Route
           exact
           path="/admin/post-information"
-          component={PostInformation}
+          component={AdminPostInformation}
+        ></Route>
+        <Route
+          exact
+          path="/admin/post-classifieds"
+          component={AdminPostClassifieds}
+        ></Route>
+        <Route exact path="/posters" component={Posters}></Route>
+        <Route
+          exact
+          path="/posters/post-classifieds"
+          component={PostersPostClassifieds}
         ></Route>
       </Switch>
     </div>
