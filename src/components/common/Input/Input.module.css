@@ -1,0 +1,15 @@
+.input {
+  width: 100%;
+}
+.input input:focus {
+  box-shadow: none;
+}
+
+.input label {
+  text-transform: capitalize;
+  width: 100%;
+}
+
+.input input {
+  margin-top: 5px;
+}

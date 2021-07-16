@@ -1,0 +1,16 @@
+.signup {
+  padding: 20px;
+}
+
+.signup .container {
+  background-color: #fff;
+  max-width: 400px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.signup .submit {
+  display: block !important;
+  width: 100%;
+}
