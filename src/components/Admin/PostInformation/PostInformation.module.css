@@ -1,0 +1,12 @@
+.PostInformation {
+  margin: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0px;
+}

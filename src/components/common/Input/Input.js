@@ -4,18 +4,28 @@ import classes from "./Input.module.css";
 
 import "./Input.module.css";
 
-const Input = ({ type, label, placeholder, required }) => {
+const Input = ({
+  type,
+  label,
+  placeholder,
+  required,
+  value,
+  onChange,
+  pattern,
+}) => {
   return (
     <div className={`form-group ${classes.input}`}>
       <label>
         {label}
-        {required && " *"}
+        <span style={{ color: "red" }}>{required && " *"}</span>
         <input
           type={type}
           className={`form-control`}
-          id="input"
           placeholder={placeholder}
           required={required}
+          value={value}
+          onChange={onChange}
+          pattern={pattern}
         />
       </label>
     </div>
