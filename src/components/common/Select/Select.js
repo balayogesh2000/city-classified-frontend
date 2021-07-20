@@ -9,6 +9,7 @@ const Select = ({ label, required, options, value, onChange }) => {
         {label}
         <span style={{ color: "red" }}>{required && " *"}</span>
         <select className="form-control" value={value} onChange={onChange}>
+          <option hidden></option>
           {options.map((option, idx) => {
             return <option key={idx}>{option}</option>;
           })}

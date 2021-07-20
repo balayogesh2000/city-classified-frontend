@@ -16,6 +16,14 @@ const data = [
   },
   {
     type: "input",
+    label: "Name",
+    required: true,
+    placeholder: "Name",
+    state: "name",
+    value: "",
+  },
+  {
+    type: "input",
     required: true,
     label: "Address Line 1",
     placeholder: "Address Line 1",
