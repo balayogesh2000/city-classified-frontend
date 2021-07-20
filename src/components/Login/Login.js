@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Login.css";
 
-const Login = () => {
+const Login = ({ setIsAuth }) => {
   return (
     <section className="signup">
       <div className="container">
@@ -63,7 +63,9 @@ const Login = () => {
             >
               Don't have an account?
               <Link to="/signup"> Please signup to continue</Link> or
-              <Link to="/"> Login as guest</Link>
+              <Link to="/" onClick={() => setIsAuth(true)}>
+                Login as guest
+              </Link>
             </p>
           </div>
         </form>
