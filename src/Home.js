@@ -11,6 +11,7 @@ const Home = () => {
       <Link to="/admin/post-classifieds">Admin - Post Classfieds</Link>
       <Link to="/posters">Posters panel</Link>
       <Link to="/posters/post-classifieds">Posters - Post Classfieds</Link>
+      <Link to="/information">View Information</Link>
     </div>
   );
 };

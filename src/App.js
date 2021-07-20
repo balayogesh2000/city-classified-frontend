@@ -9,6 +9,7 @@ import AdminPostInformation from "./components/Admin/PostInformation";
 import AdminPostClassifieds from "./components/Admin/PostClassifieds";
 import Posters from "./components/Posters/Posters";
 import PostersPostClassifieds from "./components/Posters/PostClassifieds";
+import Information from "./components/Information/Information";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           path="/posters/post-classifieds"
           component={PostersPostClassifieds}
         ></Route>
+        <Route exact path="/information" component={Information}></Route>
       </Switch>
     </div>
   );
