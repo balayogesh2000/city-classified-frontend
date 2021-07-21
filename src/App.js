@@ -29,7 +29,11 @@ const App = () => {
         {isAuth ? (
           <Button onClick={() => setIsAuth(false)}>Logout</Button>
         ) : (
-          <Button onClick={handleLogin}>Login as Guest</Button>
+          <div>
+            <Button onClick={handleLogin}>Login as Guest</Button>
+            <Button onClick={() => history.push("/signup")}>Sign Up</Button>
+            <Button onClick={() => history.push("/login")}>Login</Button>
+          </div>
         )}
       </nav>
       <Switch>
