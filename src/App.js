@@ -18,30 +18,23 @@ import "./App.css";
 const App = () => {
   const [isAuth, setIsAuth] = useState(false);
   const history = useHistory();
+
+  const handleLogin = () => {
+    setIsAuth(true);
+    history.push("/");
+  };
   return (
     <div>
       <nav className="Navbar">
         {isAuth ? (
           <Button onClick={() => setIsAuth(false)}>Logout</Button>
         ) : (
-          <div>
-            <Button onClick={() => history.push("/login")}>Login</Button>
-            <Button
-              onClick={() => history.push("/signup")}
-              style={{ marginLeft: "10px" }}
-            >
-              Sign Up
-            </Button>
-          </div>
+          <Button onClick={handleLogin}>Login as Guest</Button>
         )}
       </nav>
       <Switch>
         <Route exact path="/signup" component={Signup}></Route>
-        <Route
-          exact
-          path="/login"
-          render={() => <Login setIsAuth={setIsAuth} />}
-        ></Route>
+        <Route exact path="/login" component={Login}></Route>
       </Switch>
       {isAuth ? (
         <Switch>
