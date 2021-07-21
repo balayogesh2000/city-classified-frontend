@@ -1,0 +1,8 @@
+.disabled {
+  filter: grayscale();
+  cursor: not-allowed;
+}
+
+.active {
+  cursor: pointer;
+}

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, Button } from "react-bootstrap";
 import Select from "../common/Select/Select";
 import Modal from "../common/Modal/Modal";
-
+import ActionIcons from "../ActionIcons/ActionIcons";
 import Title from "../common/Title/Title";
 
 import classes from "./Classifieds.module.css";
@@ -93,8 +93,16 @@ const Information = () => {
             return (
               <Card>
                 <Card.Body>
-                  <Card.Title style={{ marginBottom: "15px" }}>
+                  <Card.Title
+                    style={{
+                      marginBottom: "15px",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
                     {info.title}
+                    <ActionIcons />
                   </Card.Title>
                   <Card.Text>
                     <p>Contact Number : {info.contact}</p>
